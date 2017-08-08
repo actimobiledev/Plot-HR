@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sv1"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How would you rate your engagement with your:"
+                android:textSize="17sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/textcolorwhite"
+                android:id="@+id/textView4"
+                android:textStyle="bold"
+                />
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl1"
+              android:layout_below="@+id/textView4" >
+            <TableLayout
+                android:id="@+id/tl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_below="@+id/textView4">
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvbenefits"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Benefits"
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvbenefitshappy"
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvbenefitsneutral"
+
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvbenefitssad"
+                        />
+
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvcommunication"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Communication"
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/tvcommunicationhappy"
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvcommunicationneutral"
+
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:layout_gravity="end"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvcommunicationsad"
+
+                        />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvteam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="The Team"
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvteamhappy"
+                        android:layout_marginLeft="5dp"
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvteamneutral"
+                        android:layout_gravity="end"
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvteamsad"
+                        android:layout_marginLeft="15dp"
+
+
+                        />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvcareer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Career Opportunities"
+
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvcareerhappy"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:id="@+id/tvcareerneutral"
+                        android:layout_marginLeft="16dp"
+                        android:layout_gravity="end"
+
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:id="@+id/tvcareersad"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="end"
+
+                        />
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvmanagement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Management"
+
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvmanagementhappy"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvmanagementneutral"
+                        android:layout_gravity="end"
+
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:id="@+id/tvmanagementsad"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="end"
+
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:id="@+id/tvsuccess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="Job Success"
+                        android:textColor="@color/textcolorwhite"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_happy"
+                        android:layout_column="3"
+                        android:layout_gravity="end"
+                        android:id="@+id/tvsuccesshappy"
+                        android:layout_marginLeft="5dp"
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_neutral"
+                        android:layout_column="4"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvsuccessneutral"
+                        android:layout_gravity="end"
+
+
+                        />
+                    <ImageView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_sad"
+                        android:layout_column="5"
+                        android:id="@+id/tvsuccesssad"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="end"
+
+                        />
+
+
+
+                </TableRow>
+            </TableLayout>
+            </ScrollView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments(optional)"
+                android:textColor="@color/textcolorwhite"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/textView8"
+                android:layout_below="@+id/rl1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/etcomment"
+                android:layout_below="@+id/textView8"
+                android:background="@drawable/layout_edittext"
+                android:padding="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/button4"
+                android:background="@color/textcolorblack"
+                android:textColor="@color/textcolorwhite"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/etcomment"
+                android:layout_alignLeft="@+id/etcomment"
+                android:layout_alignStart="@+id/etcomment"
+                android:layout_alignRight="@+id/etcomment"
+                android:layout_alignEnd="@+id/etcomment" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Happiness Index"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFAEA3A3"
+        android:layout_marginBottom="20dp"
+
+        />
+
+</RelativeLayout>
+
+
+

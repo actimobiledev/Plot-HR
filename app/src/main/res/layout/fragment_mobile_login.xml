@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:background="@drawable/layout_edittext"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:enabled="false"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="35dp"
+        android:text=" +91"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:maxEms="2"
+        android:ems="2"
+        android:lines="1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextmobilenumber"
+        android:background="@drawable/layout_edittext"
+        android:padding="13dp"
+        android:hint="Phone Number"
+        android:ems="10"
+        android:maxLength="10"
+        android:inputType="number"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        android:background="@color/textcolorblack"
+        android:textColor="@color/textcolorwhite"
+        android:id="@+id/btnext"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="33dp"
+        android:layout_alignRight="@+id/editTextmobilenumber"
+        android:layout_alignEnd="@+id/editTextmobilenumber" />
+
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

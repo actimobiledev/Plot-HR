@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "610977409619",
+    "firebase_url": "https://happinessindex-plothr.firebaseio.com",
+    "project_id": "happinessindex-plothr",
+    "storage_bucket": "happinessindex-plothr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610977409619:android:7a938ce9f65c72cc",
+        "android_client_info": {
+          "package_name": "com.actiknow.plothr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610977409619-47viflgs3uq5l89ah9v6crg0rigvgt0e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.actiknow.plothr",
+            "certificate_hash": "363994db927082f24912891d22246809c6cef94f"
+          }
+        },
+        {
+          "client_id": "610977409619-qlofed1ue88k6n0gpav1i7ipp91ib9bk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGeZC0FfqSB-tBCcoZNRHjq_skrGKyw5A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610977409619-qlofed1ue88k6n0gpav1i7ipp91ib9bk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

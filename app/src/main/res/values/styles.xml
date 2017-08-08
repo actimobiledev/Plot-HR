@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#000000</item>
+
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">#000000</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/semitransparent_white</item>
+        <item name="android:bottomDark">@color/semitransparent_white</item>
+        <item name="android:bottomMedium">@color/semitransparent_white</item>
+        <item name="android:centerBright">@color/semitransparent_white</item>
+        <item name="android:centerDark">@color/semitransparent_white</item>
+        <item name="android:centerMedium">@color/semitransparent_white</item>
+        <item name="android:fullBright">@color/semitransparent_white</item>
+        <item name="android:fullDark">@color/semitransparent_white</item>
+        <item name="android:topBright">@color/semitransparent_white</item>
+        <item name="android:topDark">@color/semitransparent_white</item>
+    </style>
+</resources>

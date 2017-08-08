@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:visibility="gone"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:background="@drawable/layout_edittext"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="35dp"
+            android:text=" +91"
+            android:enabled="false"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:maxEms="2"
+            android:ems="2"
+            android:lines="1"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView"
+            android:layout_toStartOf="@+id/textView" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etmobile"
+            android:background="@drawable/layout_edittext"
+            android:padding="13dp"
+            android:hint="Phone Number"
+            android:ems="10"
+            android:maxLength="10"
+            android:inputType="number"
+            android:layout_alignTop="@+id/editText2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/editText2"
+            android:layout_toEndOf="@+id/editText2" />
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextcode"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/layout_edittext"
+            android:padding="13dp"
+            android:hint="Enter OTP"
+            android:maxLength="6"
+            android:layout_below="@+id/editText2"
+            android:layout_alignLeft="@+id/editText2"
+            android:layout_alignStart="@+id/editText2"
+            android:layout_marginTop="30dp"
+            android:inputType="number"
+            android:layout_alignRight="@+id/etmobile"
+            android:layout_alignEnd="@+id/etmobile" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT"
+            android:id="@+id/button3"
+            android:background="@color/textcolorblack"
+            android:textColor="@color/textcolorwhite"
+            android:layout_below="@+id/editTextcode"
+            android:layout_alignLeft="@+id/editTextcode"
+            android:layout_alignStart="@+id/editTextcode"
+            android:layout_alignRight="@+id/editTextcode"
+            android:layout_alignEnd="@+id/editTextcode" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_string_here"
+            android:textColor="#ffff"
+            android:id="@+id/resend"
+            android:textSize="15dp"
+            android:layout_below="@+id/button3"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+         />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resend"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#88000000"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_details"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:textColor="#FFAEA3A3"
+                 />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

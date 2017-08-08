@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/clMain"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Happiness Index"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FFAEA3A3"
+            android:id="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewfeelingtoday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="How are you feeling?"
+                    android:textColor="@color/textcolorwhite"
+                    android:textSize="30sp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"/>
+                <ImageView
+                    android:id="@+id/imageViewhappy3"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textViewfeelingtoday"
+                    android:src="@drawable/ic_happy2"/>
+
+                <ImageView
+                    android:id="@+id/imageViewneutral3"
+                    android:layout_width="110dp"
+                    android:clickable="true"
+                    android:layout_height="110dp"
+                    android:padding="15dp"
+                    android:layout_alignTop="@+id/imageViewhappy3"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_neutral2"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewsad3"
+                    android:clickable="true"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:padding="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/imageViewneutral3"
+                    android:src="@drawable/ic_sad2"/><![CDATA[
+            / android:background="@drawable/buttonpress"
+            />
+        ]]>
+            </RelativeLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Submit"
+            android:textColor="@color/textcolorwhite"
+            android:background="@color/textcolorblack"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="203dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
